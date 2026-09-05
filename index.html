@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FABRIT — Пассивная антидроновая защита промышленных и стратегических объектов</title>
-  <meta name="description" content="Проектирование и монтаж быстровозводимых защитно-ограждающих конструкций на базе усиленных строительных лесов, стальных тросов и высокопрочных сеток для защиты резервуаров, оборудования и зданий от БПЛА.">
+  <title>FABRIT — Защитно-ограждающие конструкции для промышленных объектов</title>
+  <meta name="description" content="Проектирование и монтаж защитно-ограждающих конструкций (ЗОК) на базе строительных лесов, стальных тросов и высокопрочных сеток для защиты резервуаров, оборудования и зданий.">
   
-  <!-- Google Fonts: Oswald / Barlow Condensed for bold headers & Inter for body -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
@@ -24,7 +24,6 @@
       <!-- Brand Logo -->
       <a href="#" class="header-brand" aria-label="FABRIT Главная">
         <div class="brand-logo-icon">
-          <!-- Industrial Hazard Chevron Logo SVG -->
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2L1 21H23L12 2Z" stroke="#FFB800" stroke-width="2" stroke-linejoin="round"/>
             <path d="M12 8V13" stroke="#FFB800" stroke-width="2.5" stroke-linecap="square"/>
@@ -40,20 +39,15 @@
         <a href="#services" class="nav-link">Услуги</a>
         <a href="#about" class="nav-link">О конструкции</a>
         <a href="#solutions" class="nav-link">Решения</a>
-        <a href="#advantages" class="nav-link">Преимущества</a>
         <a href="#contacts" class="nav-link">Контакты</a>
       </nav>
 
-      <!-- Right Header Actions -->
+      <!-- Right Header: phone only -->
       <div class="header-actions">
-        <div class="header-phone-box">
+        <div class="header-phone-box" style="display: flex;">
           <span class="header-phone-label">Отдел спецпроектов</span>
           <a href="tel:+78005558412" class="header-phone-number">+7 (800) 555-84-12</a>
         </div>
-        
-        <button class="header-cta-btn" data-open-modal data-target-type="Консультация из шапки">
-          СВЯЗАТЬСЯ С НАМИ
-        </button>
 
         <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Открыть меню">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -71,10 +65,9 @@
       <a href="#services" class="nav-link" style="color: #FFFFFF;">Услуги</a>
       <a href="#about" class="nav-link" style="color: #FFFFFF;">О конструкции</a>
       <a href="#solutions" class="nav-link" style="color: #FFFFFF;">Решения</a>
-      <a href="#advantages" class="nav-link" style="color: #FFFFFF;">Преимущества</a>
       <a href="#contacts" class="nav-link" style="color: #FFFFFF;">Контакты</a>
       <div style="padding-top: 12px; border-top: 1px solid #2B303A;">
-        <span style="display: block; font-family: var(--font-mono); font-size: 0.75rem; color: #9CA3AF;">Телефон для заявок:</span>
+        <span style="display: block; font-family: var(--font-mono); font-size: 0.75rem; color: #9CA3AF;">Телефон:</span>
         <a href="tel:+78005558412" style="color: var(--color-accent); font-weight: 800; font-size: 1.25rem;">+7 (800) 555-84-12</a>
       </div>
     </div>
@@ -88,20 +81,9 @@
     
     <div class="container hero-container">
       <div class="hero-content-wrapper">
-        
-        <!-- Floating Accent Badge -->
-        <div class="hero-floating-badge">
-          НАДЕЖНО.<br>
-          БЫСТРО.<br>
-          ВЫГОДНО.
-        </div>
 
         <!-- Left-aligned Dark Box -->
         <div class="hero-dark-box">
-          <div class="section-label dark" style="margin-bottom: 20px;">
-            <span>СИСТЕМЫ ПАССИВНОЙ БЕЗОПАСНОСТИ ОБЪЕКТОВ ТЭК И ПРОМЫШЛЕННОСТИ</span>
-          </div>
-
           <h1 class="hero-title">
             ЗАЩИТА ВАШИХ ОБЪЕКТОВ
           </h1>
@@ -111,11 +93,11 @@
           </p>
 
           <div class="hero-actions-row">
-            <button class="btn btn-primary btn-icon-arrow" data-open-modal data-target-type="Заявка с первого экрана">
-              ОСТАВИТЬ ЗАЯВКУ
-            </button>
-            <a href="#solutions" class="btn btn-outline-light">
+            <a href="#solutions" class="btn btn-primary btn-icon-arrow">
               РЕШЕНИЯ ДЛЯ ОБЪЕКТОВ
+            </a>
+            <a href="#services" class="btn btn-outline-light">
+              НАШИ УСЛУГИ
             </a>
           </div>
 
@@ -123,26 +105,6 @@
           <div class="hero-hatch-pattern"></div>
         </div>
 
-      </div>
-
-      <!-- Quick Industrial Specs Bar -->
-      <div class="hero-specs-bar">
-        <div class="spec-item">
-          <div class="spec-val">ОТ 7 ДНЕЙ</div>
-          <div class="spec-desc">Срок монтажа на объекте</div>
-        </div>
-        <div class="spec-item">
-          <div class="spec-val">ДО 50+ КГ</div>
-          <div class="spec-desc">Улавливание кинетической массы БПЛА</div>
-        </div>
-        <div class="spec-item">
-          <div class="spec-val">100% ГОСТ / СП</div>
-          <div class="spec-desc">Расчет ветровых и снеговых нагрузок</div>
-        </div>
-        <div class="spec-item">
-          <div class="spec-val">0 ДНЕЙ ПРОСТОЯ</div>
-          <div class="spec-desc">Без остановки технологического цикла</div>
-        </div>
       </div>
 
     </div>
@@ -190,12 +152,9 @@
             <ul class="service-features-list">
               <li><span class="sf-dot"></span>Расчёт ветровых и снеговых нагрузок (СП 20.13330)</li>
               <li><span class="sf-dot"></span>Комплект рабочей документации (КМ / КМД)</li>
-              <li><span class="sf-dot"></span>3D-модель и чертежи без привязки к объекту</li>
+              <li><span class="sf-dot"></span>3D-модель и чертежи конструкции</li>
               <li><span class="sf-dot"></span>Сметная документация (ЛСС / ССР)</li>
             </ul>
-            <button class="service-cta-btn" data-open-modal data-target-type="Проектная документация ЗОК">
-              Заказать проект →
-            </button>
           </div>
         </article>
 
@@ -224,9 +183,6 @@
               <li><span class="sf-dot"></span>Регистрация заключения в Ростехнадзоре</li>
               <li><span class="sf-dot"></span>Устранение замечаний экспертов</li>
             </ul>
-            <button class="service-cta-btn" data-open-modal data-target-type="Экспертиза промбезопасности">
-              Получить консультацию →
-            </button>
           </div>
         </article>
 
@@ -240,8 +196,8 @@
           <div class="service-card-body">
             <div class="service-icon-row">
               <svg class="service-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
+                <path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/>
+                <line x1="12" y1="7" x2="12" y2="17"/>
               </svg>
             </div>
             <h3 class="service-card-title">Комплектация объектов метизной продукцией</h3>
@@ -254,9 +210,6 @@
               <li><span class="sf-dot"></span>Тросы, хомуты, талрепы, анкеры</li>
               <li><span class="sf-dot"></span>Доставка на объект в кратчайшие сроки</li>
             </ul>
-            <button class="service-cta-btn" data-open-modal data-target-type="Комплектация метизами">
-              Запросить спецификацию →
-            </button>
           </div>
         </article>
 
@@ -284,9 +237,6 @@
               <li><span class="sf-dot"></span>Сдача объекта «под ключ» с актами</li>
               <li><span class="sf-dot"></span>Гарантийное обслуживание конструкции</li>
             </ul>
-            <button class="service-cta-btn service-cta-btn--primary" data-open-modal data-target-type="Монтаж под ключ">
-              Заказать монтаж →
-            </button>
           </div>
         </article>
 
@@ -324,7 +274,7 @@
               <div class="point-body">
                 <strong>В основе конструкции — прочный каркас</strong>
                 <p>
-                  Строительные леса высокого качества, трубные соединения. Мы используем проверенные технологии: трубно-хомутовые или клиновые соединения, а диаметр стальных труб — не менее 48 мм — обеспечивает максимальную жесткость и устойчивость даже в экстремальных климатических условиях.
+                  Строительные леса высокого качества, трубные соединения. Трубно-хомутовые или клиновые соединения, диаметр стальных труб не менее 48 мм — обеспечивает максимальную жёсткость и устойчивость в экстремальных климатических условиях.
                 </p>
               </div>
             </div>
@@ -335,7 +285,7 @@
               <div class="point-body">
                 <strong>Каркас обтянут прочной сеткой</strong>
                 <p>
-                  Металлическая или композитная сетка с точно подобранным шагом ячейки в зависимости от типа защищаемого периметра. Высокопрочное плетение эффективно рассеивает и гасит кинетическую энергию удара, предотвращая проникновение БПЛА к технологическому оборудованию.
+                  Металлическая или композитная сетка с точно подобранным шагом ячейки в зависимости от типа защищаемого периметра. Высокопрочное плетение рассеивает и гасит кинетическую энергию удара БПЛА.
                 </p>
               </div>
             </div>
@@ -346,7 +296,7 @@
               <div class="point-body">
                 <strong>Усиление стальными тросами</strong>
                 <p>
-                  Для создания прочной кровли и укрепления стен каркаса. Вантовая система растяжек и натяжителей надежно фиксирует защитное полотно, компенсируя порывы штормового ветра, снеговые шапки и термические деформации. Все элементы оцинкованы для защиты от агрессивной среды.
+                  Вантовая система растяжек и натяжителей надёжно фиксирует защитное полотно, компенсируя порывы штормового ветра, снеговые шапки и термические деформации. Все элементы оцинкованы.
                 </p>
               </div>
             </div>
@@ -401,7 +351,7 @@
   </section>
 
   <!-- ==========================================================================
-       4. WHAT WE PROTECT (ЧТО МЫ УКРЫВАЕМ: РЕАЛИЗОВАННЫЕ РЕШЕНИЯ)
+       5. WHAT WE PROTECT (РЕАЛИЗОВАННЫЕ РЕШЕНИЯ)
        ========================================================================== -->
   <section class="section-solutions" id="solutions">
     <div class="container">
@@ -413,17 +363,11 @@
             <span>СФЕРЫ ПРИМЕНЕНИЯ И ГОТОВЫЕ ТИПОВЫЕ РЕШЕНИЯ</span>
           </div>
           <h2 class="section-title">
-            ЧТО МЫ УКРЫВАЕМ: РЕАЛИЗОВАННЫЕ РЕШЕНИЯ
+            ЧТО МЫ УКРЫВАЕМ
           </h2>
           <p class="solutions-subtitle">
             Комплексная защита ключевых производственных узлов предприятий топливно-энергетического комплекса, нефтехимии, металлургии и энергетики.
           </p>
-        </div>
-
-        <div>
-          <button class="btn btn-primary btn-icon-arrow" data-open-modal data-target-type="Консультация по решениям">
-            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
-          </button>
         </div>
       </div>
 
@@ -456,11 +400,6 @@
                 <span>Наливные эстакады и узлы перекачки</span>
               </li>
             </ul>
-            <div class="solution-card-footer">
-              <button class="solution-link-btn" data-open-modal data-target-type="Защита емкостей и резервуаров">
-                Рассчитать защиту резервуаров →
-              </button>
-            </div>
           </div>
         </div>
 
@@ -490,11 +429,6 @@
                 <span>Электрощитовые блоки и распределительные узлы</span>
               </li>
             </ul>
-            <div class="solution-card-footer">
-              <button class="solution-link-btn" data-open-modal data-target-type="Защита оборудования и инфраструктуры">
-                Рассчитать защиту оборудования →
-              </button>
-            </div>
           </div>
         </div>
 
@@ -524,11 +458,6 @@
                 <span>Нестандартные формы промышленных конструкций</span>
               </li>
             </ul>
-            <div class="solution-card-footer">
-              <button class="solution-link-btn" data-open-modal data-target-type="Защита зданий и сооружений">
-                Рассчитать защиту зданий →
-              </button>
-            </div>
           </div>
         </div>
 
@@ -538,61 +467,7 @@
   </section>
 
   <!-- ==========================================================================
-       5. ADVANTAGES SECTION (ПРЕИМУЩЕСТВА)
-       ========================================================================== -->
-  <section class="section-advantages" id="advantages">
-    <div class="container">
-      
-      <div class="section-label dark">
-        <span>ПОЧЕМУ ПРОМЫШЛЕННЫЕ ХОЛДИНГИ ВЫБИРАЮТ FABRIT</span>
-      </div>
-
-      <h2 class="section-title dark">
-        ПРЕИМУЩЕСТВА ИНЖЕНЕРНОГО ПОДХОДА
-      </h2>
-
-      <div class="advantages-grid">
-        
-        <div class="advantage-item">
-          <div class="advantage-num">01</div>
-          <h3 class="advantage-title">МОНТАЖ БЕЗ ОСТАНОВКИ</h3>
-          <p class="advantage-desc">
-            Все монтажные работы проводятся с соблюдением требований промышленной безопасности и регламентов огневых/высотных работ без прерывания технологических процессов предприятия.
-          </p>
-        </div>
-
-        <div class="advantage-item">
-          <div class="advantage-num">02</div>
-          <h3 class="advantage-title">ТОЧНЫЙ ИНЖЕНЕРНЫЙ РАСЧЕТ</h3>
-          <p class="advantage-desc">
-            Каждый проект проходит расчет в специализированном ПО на ветровые, снеговые и ударные нагрузки в соответствии с СП 20.13330 и климатической зоной объекта.
-          </p>
-        </div>
-
-        <div class="advantage-item">
-          <div class="advantage-num">03</div>
-          <h3 class="advantage-title">АТТЕСТОВАННЫЕ МАТЕРИАЛЫ</h3>
-          <p class="advantage-desc">
-            Используем только сертифицированные строительные леса, оцинкованную трубную продукцию и прочные сети с паспортами качества завода-изготовителя и актами испытаний.
-          </p>
-        </div>
-
-        <div class="advantage-item">
-          <div class="advantage-num">04</div>
-          <h3 class="advantage-title">РЕШЕНИЯ ПОД КЛЮЧ</h3>
-          <p class="advantage-desc">
-            Берем на себя полный цикл: от лазерного 3D-сканирования объекта и разработки проектной документации (ПД/РД) до доставки, шеф-монтажа и гарантийного обслуживания.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ==========================================================================
-       7. FOOTER (ПОДВАЛ)
+       6. FOOTER (ПОДВАЛ)
        ========================================================================== -->
   <footer class="site-footer" id="contacts">
     <div class="container">
@@ -612,7 +487,7 @@
             <span>FABRIT</span>
           </div>
           <p class="footer-desc">
-            Проектирование, производство и монтаж пассивных защитно-ограждающих сеточных конструкций для защиты критической инфраструктуры от угроз БПЛА.
+            Проектирование и монтаж защитно-ограждающих конструкций для защиты критической инфраструктуры промышленных и стратегических объектов.
           </p>
           <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #9CA3AF;">
             Лицензии СРО на проектирование и строительство.
@@ -623,12 +498,11 @@
         <div>
           <h4 class="footer-col-title">РАЗДЕЛЫ</h4>
           <ul class="footer-nav-list">
+            <li><a href="#services">Наши услуги</a></li>
             <li><a href="#about">О конструкции и технологии</a></li>
             <li><a href="#solutions">Решения для резервуаров</a></li>
             <li><a href="#solutions">Защита подстанций и ТП</a></li>
             <li><a href="#solutions">Защита зданий и сооружений</a></li>
-            <li><a href="#advantages">Преимущества системы</a></li>
-            <li><a href="#calculator">Расчет стоимости</a></li>
           </ul>
         </div>
 
@@ -637,7 +511,7 @@
           <h4 class="footer-col-title">КОНТАКТЫ</h4>
           
           <div class="footer-contact-item">
-            <span class="contact-lbl">Единый телефон отдела продаж</span>
+            <span class="contact-lbl">Телефон отдела спецпроектов</span>
             <a href="tel:+78005558412" class="contact-val">+7 (800) 555-84-12</a>
           </div>
 
@@ -662,7 +536,7 @@
       <!-- Footer Bottom Bar -->
       <div class="footer-bottom-bar">
         <div>
-          © 2026 FABRIT. Все права защищены. Пассивная антидроновая защита промышленных объектов.
+          © 2026 FABRIT. Все права защищены.
         </div>
         <div class="footer-bottom-links">
           <a href="#" onclick="alert('Политика конфиденциальности: данные клиентов и объектов охраняются в соответствии с Федеральным законом 152-ФЗ и соглашением NDA.'); return false;">Политика конфиденциальности</a>
@@ -672,64 +546,6 @@
 
     </div>
   </footer>
-
-  <!-- ==========================================================================
-       8. MODAL INQUIRY FORM (МОДАЛЬНОЕ ОКНО ЗАЯВКИ)
-       ========================================================================== -->
-  <div class="modal-overlay" id="inquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-window">
-      
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Закрыть модальное окно">✕</button>
-      
-      <div class="modal-header">
-        <div class="section-label dark" style="margin-bottom: 8px;">
-          <span>ОБРАТНАЯ СВЯЗЬ С ИНЖЕНЕРНЫМ ОТДЕЛОМ</span>
-        </div>
-        <h3 class="modal-title" id="modalTitle">СВЯЗАТЬСЯ С НАМИ</h3>
-        <p class="modal-subtitle">Оставьте контакты для получения консультации и расчета защитной конструкции.</p>
-      </div>
-
-      <div class="modal-body">
-        <form id="modalLeadForm">
-          <input type="hidden" id="modalTargetType" name="inquiry_source" value="Основная форма">
-
-          <div class="modal-form-group">
-            <label class="modal-label" for="modalName">Ваше имя / Должность:</label>
-            <input type="text" id="modalName" class="modal-input" placeholder="Иван Иванов, Главный инженер" required>
-          </div>
-
-          <div class="modal-form-group">
-            <label class="modal-label" for="modalCompany">Наименование компании / Объекта:</label>
-            <input type="text" id="modalCompany" class="modal-input" placeholder="ООО «НефтеХимПром»" required>
-          </div>
-
-          <div class="modal-form-group">
-            <label class="modal-label" for="modalPhone">Телефон:</label>
-            <input type="tel" id="modalPhone" class="modal-input" placeholder="+7 (___) ___-__-__" required>
-          </div>
-
-          <div class="modal-form-group">
-            <label class="modal-label" for="modalEmail">Корпоративный Email:</label>
-            <input type="email" id="modalEmail" class="modal-input" placeholder="ivanov@prom.ru" required>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-icon-arrow" style="width: 100%; margin-top: 8px;">
-            ОТПРАВИТЬ ЗАПРОС
-          </button>
-
-          <p class="modal-notice">
-            Информация о вашем объекте строго конфиденциальна и передается по защищенному каналу связи.
-          </p>
-        </form>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Toast Notification -->
-  <div class="toast-success" id="successToast">
-    ✓ Заявка успешно принята в обработку!
-  </div>
 
   <script src="js/main.js"></script>
 </body>

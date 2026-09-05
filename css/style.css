@@ -392,20 +392,14 @@ ul, ol {
 }
 
 .header-phone-box {
-  display: none;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding: 0 28px;
   border-left: 1px solid var(--border-light);
 }
 
-@media (min-width: 1200px) {
-  .header-phone-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-}
 
 .header-phone-label {
   font-family: var(--font-mono);
@@ -424,21 +418,7 @@ ul, ol {
 }
 
 .header-cta-btn {
-  background-color: var(--color-accent);
-  color: #000000;
-  font-family: var(--font-heading);
-  font-size: 0.875rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-left: 2px solid rgba(0, 0, 0, 0.08);
-  transition: background-color var(--transition-fast);
-  cursor: pointer;
-  white-space: nowrap;
+  display: none;
 }
 
 .header-cta-btn:hover {
@@ -950,11 +930,7 @@ ul, ol {
 }
 
 .solution-card-footer {
-  padding-top: 20px;
-  border-top: 1px solid var(--border-light);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
 }
 
 .solution-link-btn {
