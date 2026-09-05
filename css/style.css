@@ -446,8 +446,8 @@ ul, ol {
    ========================================================================== */
 .hero-section {
   position: relative;
-  min-height: calc(100vh - var(--header-height));
-  min-height: 640px;
+  height: calc(100vh - var(--header-height));
+  min-height: 560px;
   display: flex;
   align-items: center;
   background-color: #111317;
@@ -455,7 +455,7 @@ ul, ol {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .hero-overlay {
