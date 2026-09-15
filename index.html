@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FABRIT — Защитно-ограждающие конструкции для промышленных объектов</title>
-  <meta name="description" content="Проектирование и монтаж защитно-ограждающих конструкций (ЗОК) на базе строительных лесов, стальных тросов и высокопрочных сеток для защиты резервуаров, оборудования и зданий.">
+  <title>FABRIT — Защитно-ограждающие конструкции по СП 542 от БПЛА</title>
+  <meta name="description" content="Проектирование и монтаж защитно-ограждающих конструкций (ЗОК) по СП 542: вантово-тросовые системы, трубчатые опоры, расчет ударной волны и высокопрочные сетки для защиты промышленных резервуаров и критических объектов.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,6 +37,8 @@
       <!-- Centered Navigation -->
       <nav class="main-nav" aria-label="Основная навигация">
         <a href="#services" class="nav-link">Услуги</a>
+        <a href="#sp542" class="nav-link">СП 542 и Защита</a>
+        <a href="#hardware-specs" class="nav-link">Комплектация</a>
         <a href="#about" class="nav-link">О конструкции</a>
         <a href="#solutions" class="nav-link">Решения</a>
         <a href="#contacts" class="nav-link">Контакты</a>
@@ -63,6 +65,8 @@
     <!-- Mobile Navigation Drawer -->
     <div id="mobileNavMenu" style="display: none; flex-direction: column; background: #111317; padding: 20px 24px; border-bottom: 2px solid var(--color-accent); gap: 16px;">
       <a href="#services" class="nav-link" style="color: #FFFFFF;">Услуги</a>
+      <a href="#sp542" class="nav-link" style="color: #FFFFFF;">СП 542 и Защита</a>
+      <a href="#hardware-specs" class="nav-link" style="color: #FFFFFF;">Комплектация</a>
       <a href="#about" class="nav-link" style="color: #FFFFFF;">О конструкции</a>
       <a href="#solutions" class="nav-link" style="color: #FFFFFF;">Решения</a>
       <a href="#contacts" class="nav-link" style="color: #FFFFFF;">Контакты</a>
@@ -136,6 +140,7 @@
             <div class="service-num-badge">01</div>
             <img src="assets/images/service-zok.jpg" alt="Разработка проектной документации на защитно-ограждающие конструкции" loading="lazy">
             <div class="service-img-overlay"></div>
+            <div class="service-key-badge" style="background: var(--color-accent); color: #000;">СП 542</div>
           </div>
           <div class="service-card-body">
             <div class="service-icon-row">
@@ -147,14 +152,18 @@
             </div>
             <h3 class="service-card-title">Разработка проектной документации на ЗОК</h3>
             <p class="service-card-desc">
-              Проектирование защитно-ограждающих конструкций с расчётом нагрузок по ГОСТ/СП. Полный комплект ПД/РД, согласованный с требованиями промышленной безопасности и условиями объекта Заказчика.
+              Проектная документация разрабатывается согласно СП 542 (Свод правил. Защитные ограждающие конструкции от беспилотных летательных аппаратов). Полный комплект ПД/РД, согласованный с требованиями промышленной безопасности и условиями объекта Заказчика.
             </p>
             <ul class="service-features-list">
-              <li><span class="sf-dot"></span>Расчёт ветровых и снеговых нагрузок (СП 20.13330)</li>
-              <li><span class="sf-dot"></span>Комплект рабочей документации (КМ / КМД)</li>
-              <li><span class="sf-dot"></span>3D-модель и чертежи конструкции</li>
+              <li><span class="sf-dot"></span><strong>Расчет ударной волны</strong> (включает в себя определение параметров, таких как давление, скорость и длительность воздействия волны, которые могут повлиять на конструкцию)</li>
+              <li><span class="sf-dot"></span>Расчёт ветровых и снеговых нагрузок по СП 20.13330.2016</li>
+              <li><span class="sf-dot"></span>Комплект рабочей документации (КМ / КМД) и 3D-модель</li>
+              <li><span class="sf-dot"></span>Определение требуемой степени защиты (1–4 класс по СП 542)</li>
               <li><span class="sf-dot"></span>Сметная документация (ЛСС / ССР)</li>
             </ul>
+            <button type="button" class="service-cta-btn open-lightbox-btn" data-img="assets/images/project-blast-calculation.jpg" data-title="Расчет ударной волны ЗОК (СП 542)" data-caption="Инженерное моделирование воздействия ударной волны на конструкцию ЗОК: эпюры распределения давления (P vs t), определение максимального импульса, скорости фронта и динамических напряжений в несущих тросах.">
+              СМОТРЕТЬ РАСЧЕТ И ЧЕРТЕЖИ
+            </button>
           </div>
         </article>
 
@@ -183,6 +192,9 @@
               <li><span class="sf-dot"></span>Регистрация заключения в Ростехнадзоре</li>
               <li><span class="sf-dot"></span>Устранение замечаний экспертов</li>
             </ul>
+            <a href="#contacts" class="service-cta-btn">
+              КОНСУЛЬТАЦИЯ ПО ЭПБ
+            </a>
           </div>
         </article>
 
@@ -190,8 +202,9 @@
         <article class="service-card" id="service-metiz">
           <div class="service-card-img-wrap">
             <div class="service-num-badge">03</div>
-            <img src="assets/images/service-metiz.jpg" alt="Комплектация объектов метизной продукцией по спецификации" loading="lazy">
+            <img src="assets/images/service-metiz.jpg" alt="Комплектация объектов метизной продукцией: скобы, коуши, талрепы, тросовые зажимы" loading="lazy">
             <div class="service-img-overlay"></div>
+            <div class="service-key-badge" style="background: #111419; color: #FFF; border: 1px solid rgba(255,255,255,0.3);">ГОСТ / DIN</div>
           </div>
           <div class="service-card-body">
             <div class="service-icon-row">
@@ -202,14 +215,17 @@
             </div>
             <h3 class="service-card-title">Комплектация объектов метизной продукцией</h3>
             <p class="service-card-desc">
-              Поставка всей номенклатуры метизной продукции по спецификации Заказчика. Болты, гайки, шпильки, хомуты, тросы, талрепы, сетки — всё с сертификатами и паспортами качества.
+              Поставка специализированной сертифицированной такелажной продукции по спецификации проекта ЗОК. Скобы М16, коуши 10 мм, талрепы вилка-вилка М20, тросовые зажимы 8 мм, канаты и сети с паспортами качества.
             </p>
             <ul class="service-features-list">
-              <li><span class="sf-dot"></span>Комплектация по спецификации проекта</li>
-              <li><span class="sf-dot"></span>Сертифицированная продукция ГОСТ</li>
-              <li><span class="sf-dot"></span>Тросы, хомуты, талрепы, анкеры</li>
-              <li><span class="sf-dot"></span>Доставка на объект в кратчайшие сроки</li>
+              <li><span class="sf-dot"></span>Такелажная скоба М16 (прямая/омегаобразная оцинкованная сталь)</li>
+              <li><span class="sf-dot"></span>Коуш 10 мм (ГОСТ 2224-93 / DIN 6899 для заделки петель троса)</li>
+              <li><span class="sf-dot"></span>Вилка-вилка талреп М20 (DIN 1478 для натяжения вантовых систем)</li>
+              <li><span class="sf-dot"></span>Тросовой зажим для троса 8 мм (DIN 741 усиленный)</li>
             </ul>
+            <a href="#hardware-specs" class="service-cta-btn">
+              СПЕЦИФИКАЦИЯ МЕТИЗОВ
+            </a>
           </div>
         </article>
 
@@ -217,9 +233,9 @@
         <article class="service-card service-card--accent" id="service-montage">
           <div class="service-card-img-wrap">
             <div class="service-num-badge">04</div>
-            <img src="assets/images/service-montage.jpg" alt="Монтаж защитно-ограждающих конструкций под ключ" loading="lazy">
+            <img src="assets/images/service-montage.jpg" alt="Монтаж вантово-тросовой защитно-ограждающей конструкции ЗОК на резервуаре РВС-2000" loading="lazy">
             <div class="service-img-overlay"></div>
-            <div class="service-key-badge">ПОД КЛЮЧ</div>
+            <div class="service-key-badge">РЕАЛЬНЫЙ ОБЪЕКТ ЗОК</div>
           </div>
           <div class="service-card-body">
             <div class="service-icon-row">
@@ -229,18 +245,383 @@
             </div>
             <h3 class="service-card-title">Монтаж под ключ</h3>
             <p class="service-card-desc">
-              Выполняем весь комплекс монтажных работ на объекте Заказчика. Бригада аттестованных монтажников, соблюдение регламентов ПБ, сдача объекта с актами выполненных работ.
+              Выполняем полный комплекс монтажных работ на действующих взрывопожароопасных объектах. Безогневая технология монтажа в зоне технологических резервуаров, соблюдение регламентов ПБ и сдача с исполнительными актами.
             </p>
             <ul class="service-features-list">
-              <li><span class="sf-dot"></span>Монтаж без остановки производства</li>
-              <li><span class="sf-dot"></span>Аттестованные специалисты по ПБ</li>
-              <li><span class="sf-dot"></span>Сдача объекта «под ключ» с актами</li>
-              <li><span class="sf-dot"></span>Гарантийное обслуживание конструкции</li>
+              <li><span class="sf-dot"></span>Монтаж без остановки производства и без огневых работ в зоне резервуаров</li>
+              <li><span class="sf-dot"></span>Вантово-тросовая сборка по нормам СП 542 и Ростехнадзора</li>
+              <li><span class="sf-dot"></span>Аттестованные монтажники с допусками к работам на высоте и ОПО</li>
+              <li><span class="sf-dot"></span>Сдача объекта «под ключ» с паспортом ЗОК и гарантией</li>
             </ul>
+            <a href="#contacts" class="service-cta-btn service-cta-btn--primary">
+              ЗАКАЗАТЬ РАСЧЕТ МОНТАЖА
+            </a>
           </div>
         </article>
 
       </div><!-- /services-grid -->
+
+      <!-- Hardware Showcase (4 ключевых элемента такелажа) -->
+      <div class="hardware-showcase-box" id="hardware-specs">
+        <div class="hardware-showcase-header">
+          <div class="hardware-title-box">
+            <h4>ЭЛЕМЕНТЫ ТАКЕЛАЖНОЙ КОМПЛЕКТАЦИИ ЗОК</h4>
+            <p>Прецизионный метизный и такелажный крепеж, рассчитанный на экстремальные ветровые и динамические нагрузки</p>
+          </div>
+          <button type="button" class="service-cta-btn open-lightbox-btn" data-img="assets/images/service-metiz.jpg" data-title="Комплект такелажной продукции ЗОК" data-caption="Студийный комплект сертифицированных метизов и такелажных узлов: скоба М16, коуш 10 мм, талреп М20, тросовый зажим 8 мм.">
+            ОБЩИЙ ВИД КОМПЛЕКТА
+          </button>
+        </div>
+
+        <div class="hardware-grid-4">
+          
+          <!-- Item 1: Скоба М16 -->
+          <div class="hardware-item-card open-lightbox-btn" data-img="assets/images/hardware/skoba-m16-hd.jpg" data-title="Такелажная скоба М16 (ГОСТ 2224-93 / DIN 82101)" data-caption="Такелажная оцинкованная скоба М16 с винтовым штифтом. Применяется для силового соединения вантовых растяжек с опорными мачтами и анкерами.">
+            <div class="hardware-thumb-wrap">
+              <img src="assets/images/hardware/skoba-m16-hd.jpg" alt="Такелажная скоба М16" loading="lazy">
+            </div>
+            <div class="hardware-item-title">Такелажная скоба М16</div>
+            <div class="hardware-standard-badge">ГОСТ 2224-93 / DIN 82101</div>
+            <p class="hardware-item-desc">
+              Силовой оцинкованный соединитель с винтовым штифтом. Служит для крепления ветвей растяжек к закладным деталям и опорным мачтам.
+            </p>
+            <div class="hardware-item-spec">Нагрузка: WLL 2.0 т (SF 6:1)</div>
+          </div>
+
+          <!-- Item 2: Коуш 10 мм -->
+          <div class="hardware-item-card open-lightbox-btn" data-img="assets/images/hardware/koush-10mm-hd.jpg" data-title="Коуш стальной 10 мм (ГОСТ 2224-93 / DIN 6899)" data-caption="Каплевидный стальной коуш 10 мм горячего цинкования. Предохраняет стальной трос от излома и истирания в узлах натяжения ЗОК.">
+            <div class="hardware-thumb-wrap">
+              <img src="assets/images/hardware/koush-10mm-hd.jpg" alt="Коуш стальной 10 мм" loading="lazy">
+            </div>
+            <div class="hardware-item-title">Коуш 10 мм</div>
+            <div class="hardware-standard-badge">ГОСТ 2224-93 / DIN 6899</div>
+            <p class="hardware-item-desc">
+              Оправка каплевидной формы горячего цинкования. Защищает стальной канат от перетирания и деформации радиуса изгиба в петле.
+            </p>
+            <div class="hardware-item-spec">Под канат: Ø 8–10 мм</div>
+          </div>
+
+          <!-- Item 3: Талреп М20 -->
+          <div class="hardware-item-card open-lightbox-btn" data-img="assets/images/hardware/talrep-m20-hd.jpg" data-title="Талреп вилка-вилка М20 (DIN 1478)" data-caption="Талреп закрытого/открытого типа вилка-вилка М20. Обеспечивает точную юстировку и поддержание расчетного предварительного натяжения вантовых систем ЗОК.">
+            <div class="hardware-thumb-wrap">
+              <img src="assets/images/hardware/talrep-m20-hd.jpg" alt="Талреп вилка-вилка М20" loading="lazy">
+            </div>
+            <div class="hardware-item-title">Вилка - вилка талреп М20</div>
+            <div class="hardware-standard-badge">DIN 1478 / ГОСТ 969-91</div>
+            <p class="hardware-item-desc">
+              Регулировочная винтовая стяжка с вилочными наконечниками. Создает и сохраняет проектное натяжение несущих тросовых растяжек ЗОК.
+            </p>
+            <div class="hardware-item-spec">Резьба: М20 | Ход: 220 мм</div>
+          </div>
+
+          <!-- Item 4: Тросовой зажим 8 мм -->
+          <div class="hardware-item-card open-lightbox-btn" data-img="assets/images/hardware/zajim-8mm-hd.jpg" data-title="Тросовой зажим для троса 8 мм (DIN 741)" data-caption="Усиленный колодочный зажим для троса 8 мм с оцинкованными гайками. Применяется для формирования проушин и фиксации сетчатого полотна.">
+            <div class="hardware-thumb-wrap">
+              <img src="assets/images/hardware/zajim-8mm-hd.jpg" alt="Тросовой зажим для троса 8 мм" loading="lazy">
+            </div>
+            <div class="hardware-item-title">Тросовой зажим 8 мм</div>
+            <div class="hardware-standard-badge">DIN 741 / DIN 1142</div>
+            <p class="hardware-item-desc">
+              Кованая колодка с U-образным болтом и контргайками. Формирует надежные неразъемные петли и крепит сетку к несущим струнам.
+            </p>
+            <div class="hardware-item-spec">Диаметр троса: 8.0 мм</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Hazard separator bar -->
+  <div class="hazard-stripe-bar"></div>
+
+  <!-- ==========================================================================
+       3.1 SP 542 PROTECTION LEVELS & UAV CLASSIFICATION MATRIX
+       ========================================================================== -->
+  <section class="section-sp542" id="sp542">
+    <div class="container">
+      
+      <div class="sp542-header">
+        <div class="section-label">
+          <span>НОРМАТИВНАЯ БАЗА И КЛАССИФИКАЦИЯ</span>
+        </div>
+        <h2 class="sp542-title">УРОВНИ ЗАЩИТЫ ОБЪЕКТА И ТИПЫ БПЛА ПО СП 542</h2>
+        <p class="sp542-subtitle">
+          Соответствие конструктивных решений защитно-ограждающих конструкций (ЗОК) категориям угроз беспилотных аппаратов согласно СП 542
+        </p>
+      </div>
+
+      <!-- Нормативный инфо-блок -->
+      <div class="sp542-intro-card">
+        <div class="sp542-intro-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          ТРЕБОВАНИЯ СП 542 И ИНЖЕНЕРНЫЕ РАСЧЕТЫ
+        </div>
+        <p class="sp542-intro-text">
+          <strong>Проектная документация разрабатывается согласно СП 542</strong> («Свод правил. Защитные ограждающие конструкции от беспилотных летательных аппаратов»). Выбор конструктивного решения определяется требуемым уровнем защиты объекта (от 1-го до 4-го).
+        </p>
+        <p class="sp542-intro-text">
+          <strong>Расчет ударной волны</strong> включает в себя определение параметров, таких как <strong>давление</strong>, <strong>скорость</strong> и <strong>длительность воздействия волны</strong>, которые могут повлиять на несущую способность и целостность защитной конструкции.
+        </p>
+      </div>
+
+      <!-- Фильтр по уровням защиты -->
+      <div class="sp542-switcher-bar">
+        <button type="button" class="sp542-level-btn active" data-level="all">
+          <span>Все уровни</span>
+          <span class="btn-badge">Матрица</span>
+        </button>
+        <button type="button" class="sp542-level-btn" data-level="1">
+          <span>1-й уровень</span>
+          <span class="btn-badge">Максимальный</span>
+        </button>
+        <button type="button" class="sp542-level-btn" data-level="2">
+          <span>2-й уровень</span>
+          <span class="btn-badge">Усиленный</span>
+        </button>
+        <button type="button" class="sp542-level-btn" data-level="3">
+          <span>3-й уровень</span>
+          <span class="btn-badge">Базовый</span>
+        </button>
+        <button type="button" class="sp542-level-btn" data-level="4">
+          <span>4-й уровень</span>
+          <span class="btn-badge">Минимальный</span>
+        </button>
+      </div>
+
+      <!-- Сравнительные матрицы СП 542 -->
+      <div class="sp542-tables-grid">
+        
+        <!-- Table 1: Элементы конструктивных решений ЗОК -->
+        <div class="sp542-table-box">
+          <div class="sp542-table-header">
+            <div class="sp542-table-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="0"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+              Конструктивные решения ЗОК
+            </div>
+            <span class="sp542-table-tag">СП 542 — ТАБЛИЦА 1</span>
+          </div>
+
+          <div class="sp542-table-wrapper">
+            <table class="sp542-table" id="tableElements">
+              <thead>
+                <tr>
+                  <th>Элементы решений ЗОК</th>
+                  <th class="col-level" data-col="1">1-й ур.</th>
+                  <th class="col-level" data-col="2">2-й ур.</th>
+                  <th class="col-level" data-col="3">3-й ур.</th>
+                  <th class="col-level" data-col="4">4-й ур.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="row-name">Защитные сетки</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-yes">✓</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Дополнительные защитные сетки</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-no">—</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Ограждения из стальных тросов</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-no">—</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Опоры (мачты / трубчатые стойки)</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-yes">✓</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Растяжки (вантовая система натяжения)</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-yes">✓</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Тюфяки / демпфирующие маты</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-no">—</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-no">—</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Противоосколочные стенки</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-no">—</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-no">—</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-no">—</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Table 2: Тип БПЛА -->
+        <div class="sp542-table-box">
+          <div class="sp542-table-header">
+            <div class="sp542-table-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              Классификация типов БПЛА
+            </div>
+            <span class="sp542-table-tag">СП 542 — ТАБЛИЦА 2</span>
+          </div>
+
+          <div class="sp542-table-wrapper">
+            <table class="sp542-table" id="tableUAV">
+              <thead>
+                <tr>
+                  <th>Тип поражающего БПЛА</th>
+                  <th class="col-level" data-col="1">1-й ур.</th>
+                  <th class="col-level" data-col="2">2-й ур.</th>
+                  <th class="col-level" data-col="3">3-й ур.</th>
+                  <th class="col-level" data-col="4">4-й ур.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="row-name">Малый (квадрокоптеры, коммерческие БПЛА)</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-yes">✓</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Легкий (FPV-дроны, легкие ударные крылья)</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-no">—</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Средний (тяжелые дроны-камикадзе)</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-no">—</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-no">—</span></td>
+                </tr>
+                <tr>
+                  <td class="row-name">Средний (с возможностью поражения осколками)</td>
+                  <td class="col-level" data-col="1"><span class="sp542-badge-yes">✓</span></td>
+                  <td class="col-level" data-col="2"><span class="sp542-badge-no">—</span></td>
+                  <td class="col-level" data-col="3"><span class="sp542-badge-no">—</span></td>
+                  <td class="col-level" data-col="4"><span class="sp542-badge-no">—</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div><!-- /sp542-tables-grid -->
+
+      <!-- Динамическая плашка описания выбранного уровня -->
+      <div class="sp542-level-info-box" id="sp542InfoBox">
+        <div>
+          <div class="sp542-level-info-title" id="infoBoxTitle">1-й Уровень Защиты — Максимальный комплекс безопасности</div>
+          <div class="sp542-level-info-text" id="infoBoxText">
+            Предусматривает полный спектр инженерных решений: двухконтурные сетки, стальные тросы, амортизирующие тюфяки и противоосколочные стенки. Защищает резервуары и объекты от всех классов БПЛА, включая тяжелые аппараты с осколочным поражением.
+          </div>
+        </div>
+        <a href="#contacts" class="btn btn-primary" style="white-space: nowrap; flex-shrink: 0;">
+          ПОДОБРАТЬ УРОВЕНЬ
+        </a>
+      </div>
+
+      <!-- Блок скриншотов из реального проекта и расчета ударной волны -->
+      <div class="sp542-project-showcase">
+        <div class="sp542-showcase-top">
+          <div class="sp542-showcase-title-box">
+            <h3>МАТЕРИАЛЫ ИЗ ПРОЕКТНОЙ ДОКУМЕНТАЦИИ ЗОК</h3>
+            <p>Пакет проектных решений включает в себя точное численное моделирование взрывного импульса и комплект рабочих чертежей марки КМ</p>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-accent); border: 1px solid var(--border-dark); padding: 8px 14px; background: #11141A;">
+            СТАНДАРТ: СП 542 / ГОСТ Р 542
+          </div>
+        </div>
+
+        <div class="sp542-cards-dual">
+          
+          <!-- Card 1: Расчет ударной волны -->
+          <div class="sp542-media-card open-lightbox-btn" data-img="assets/images/project-blast-calculation.jpg" data-title="Скриншот из проекта: Расчет ударной волны ЗОК" data-caption="Численный расчет в специализированном гидродинамическом комплексе: профиль давления (P vs t), определение зоны торможения фронта ударной волны и кинетической энергии аппарата, распределение эквивалентных напряжений (МПа) в вантовых тросах и мачтах ЗОК.">
+            <div class="sp542-media-thumb">
+              <span class="sp542-media-overlay-tag">Численное моделирование</span>
+              <img src="assets/images/project-blast-calculation.jpg" alt="Расчет ударной волны на вантовую защитную конструкцию" loading="lazy">
+              <div class="sp542-zoom-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                УВЕЛИЧИТЬ
+              </div>
+            </div>
+            <div class="sp542-media-body">
+              <div class="sp542-media-title">Расчет ударной волны и динамических нагрузок</div>
+              <p class="sp542-media-desc">
+                Определение расчетного давления (МПа), скорости распространения фронта и длительности волны. Расчет подтверждает непревышение предела текучести стали тросов и устойчивость опорных мачт.
+              </p>
+              <div class="sp542-param-tags">
+                <span class="sp542-param-tag">Давление P_max</span>
+                <span class="sp542-param-tag">Длительность t_pulse</span>
+                <span class="sp542-param-tag">Скорость фронта v_wave</span>
+                <span class="sp542-param-tag">Эквивалентные напряжения</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Чертеж из проекта КМ -->
+          <div class="sp542-media-card open-lightbox-btn" data-img="assets/images/service-zok.jpg" data-title="Скриншот из проекта: Рабочий чертеж КМ защитно-ограждающей конструкции" data-caption="Рабочая документация шифра ЗОК-КМ: план расположения опорных стоек и тросовых растяжек вокруг технологических емкостей, высотные отметки, узлы сопряжения тросов с талрепами и фундаментными закладными деталями.">
+            <div class="sp542-media-thumb">
+              <span class="sp542-media-overlay-tag">Рабочий чертеж КМ</span>
+              <img src="assets/images/service-zok.jpg" alt="Чертеж проекта КМ защитно-ограждающей конструкции" loading="lazy">
+              <div class="sp542-zoom-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                УВЕЛИЧИТЬ
+              </div>
+            </div>
+            <div class="sp542-media-body">
+              <div class="sp542-media-title">План и разрезы конструкции ЗОК (Проект КМ)</div>
+              <p class="sp542-media-desc">
+                Генеральный план размещения вантовых мачт, геометрическая схема натяжения сеточного барьера, детальные узлы сопряжения тросов с талрепами М20 и такелажными скобами М16 по ГОСТ.
+              </p>
+              <div class="sp542-param-tags">
+                <span class="sp542-param-tag">План ЗОК</span>
+                <span class="sp542-param-tag">Разрез А-А</span>
+                <span class="sp542-param-tag">Узлы крепления КМД</span>
+                <span class="sp542-param-tag">Спецификация стали</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </div>
   </section>
@@ -272,9 +653,9 @@
             <div class="about-point-card">
               <div class="point-number">01</div>
               <div class="point-body">
-                <strong>В основе конструкции — прочный каркас</strong>
+                <strong>В основе конструкции — силовой трубчатый каркас</strong>
                 <p>
-                  Строительные леса высокого качества, трубные соединения. Трубно-хомутовые или клиновые соединения, диаметр стальных труб не менее 48 мм — обеспечивает максимальную жёсткость и устойчивость в экстремальных климатических условиях.
+                  Несущие трубчатые стойки и опорные мачты (стальные трубы ГОСТ 8732/10704, Ø от 89 до 219 мм), пространственные вантово-тросовые фермы и система стальных канатов по СП 542. Модульный монтаж без проведения огневых работ вблизи технологических резервуаров.
                 </p>
               </div>
             </div>
@@ -283,9 +664,9 @@
             <div class="about-point-card">
               <div class="point-number">02</div>
               <div class="point-body">
-                <strong>Каркас обтянут прочной сеткой</strong>
+                <strong>Каркас обтянут высокопрочной сеткой</strong>
                 <p>
-                  Металлическая или композитная сетка с точно подобранным шагом ячейки в зависимости от типа защищаемого периметра. Высокопрочное плетение рассеивает и гасит кинетическую энергию удара БПЛА.
+                  Стальная кольчужная или кордовая оцинкованная сетка с расчетным шагом ячейки. Демпфирующее плетение поглощает кинетическую энергию БПЛА и рассеивает воздействие ударной волны.
                 </p>
               </div>
             </div>
@@ -294,9 +675,9 @@
             <div class="about-point-card">
               <div class="point-number">03</div>
               <div class="point-body">
-                <strong>Усиление стальными тросами</strong>
+                <strong>Вантово-тросовая система растяжек</strong>
                 <p>
-                  Вантовая система растяжек и натяжителей надёжно фиксирует защитное полотно, компенсируя порывы штормового ветра, снеговые шапки и термические деформации. Все элементы оцинкованы.
+                  Стальные оцинкованные канаты ГОСТ 2688/7668 с талрепами М20 и коушами 10 мм. Обеспечивают стабильное предварительное натяжение, компенсацию штормовых ветров и динамических ударов.
                 </p>
               </div>
             </div>
@@ -310,20 +691,24 @@
               <span>Нормативы РФ</span>
             </div>
             <div class="tech-spec-row">
-              <span class="tech-spec-name">Материал силового каркаса</span>
-              <span class="tech-spec-value">Труба стальная ГОСТ 3262-75 / ГОСТ 8732-78 (Ø ≥ 48 мм)</span>
+              <span class="tech-spec-name">Материал силовых мачт и стоек</span>
+              <span class="tech-spec-value">Труба стальная ГОСТ 8732-78 / ГОСТ 10704-91 (Ø 89–219 мм)</span>
             </div>
             <div class="tech-spec-row">
-              <span class="tech-spec-name">Защитная сеть</span>
-              <span class="tech-spec-value">Высокопрочная оцинкованная / композитная кордовая</span>
+              <span class="tech-spec-name">Нормативная база</span>
+              <span class="tech-spec-value">СП 542 (ЗОК от БПЛА), ГОСТ Р, СП 20.13330.2016</span>
+            </div>
+            <div class="tech-spec-row">
+              <span class="tech-spec-name">Расчетные параметры</span>
+              <span class="tech-spec-value">Ветровые, снеговые нагрузки, давление и скорость ударной волны</span>
             </div>
             <div class="tech-spec-row">
               <span class="tech-spec-name">Тросовая обвязка</span>
-              <span class="tech-spec-value">Стальные канаты ГОСТ 2688-80 с талрепами натяжения</span>
+              <span class="tech-spec-value">Канаты ГОСТ 2688-80/7668-80, талрепы вилка-вилка М20 DIN 1478, скобы М16</span>
             </div>
             <div class="tech-spec-row">
-              <span class="tech-spec-name">Ветроустойчивость</span>
-              <span class="tech-spec-value">I–V ветровые районы по СП 20.13330.2016</span>
+              <span class="tech-spec-name">Защитная сеть</span>
+              <span class="tech-spec-value">Высокопрочная оцинкованная кольчужная / композитная кордовая</span>
             </div>
           </div>
 
@@ -331,12 +716,12 @@
 
         <!-- Right Vertical Image Column -->
         <div class="about-image-col">
-          <div class="about-img-frame">
-            <img src="assets/images/about-tech.jpg" alt="Монтаж защитного каркаса строительных лесов и антидроновой сетки вокруг промышленной колонны" loading="lazy">
+          <div class="about-img-frame open-lightbox-btn" data-img="assets/images/about-tech.jpg" data-title="Опорная мачта и вантово-тросовый узел ЗОК" data-caption="Узел сопряжения защитной конструкции: опорная стойка, стальной канат, талреп предварительного натяжения и полотно противоосколочной/улавливающей сетки.">
+            <img src="assets/images/about-tech.jpg" alt="Монтаж опорной мачты и вантово-тросового сетчатого барьера ЗОК" loading="lazy">
             <div class="about-img-badge">
               <div>
-                <div class="img-badge-text">СИЛОВОЙ КАРКАС И СЕТОЧНЫЙ БАРЬЕР</div>
-                <div style="font-size: 0.6875rem; color: #9CA3AF;">Узел крепления трубных хомутов и вантовых тросов</div>
+                <div class="img-badge-text">ОПОРНАЯ МАЧТА И ВАНТОВЫЙ УЗЕЛ ЗОК</div>
+                <div style="font-size: 0.6875rem; color: #9CA3AF;">Талреп натяжения, стальной трос и улавливающая сеть</div>
               </div>
               <div class="img-badge-status">
                 ● В РЕАЛИЗАЦИИ
@@ -546,6 +931,77 @@
 
     </div>
   </footer>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL (ПРОСМОТР ЧЕРТЕЖЕЙ, РАСЧЕТОВ И МЕТИЗОВ)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="imageLightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-container">
+      <div class="lightbox-header">
+        <div class="lightbox-title" id="lightboxTitle">Чертеж / Расчет ЗОК</div>
+        <button type="button" class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Закрыть просмотр">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="lightbox-body">
+        <div class="lightbox-image-wrap">
+          <img src="" alt="" id="lightboxImage">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       LEAD / INQUIRY MODAL (ЗАКАЗ РАСЧЕТА И ПРОЕКТИРОВАНИЯ)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="inquiryModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-container" style="max-width: 560px;">
+      <div class="lightbox-header">
+        <div class="lightbox-title">ЗАПРОС РАСЧЕТА ПО СП 542</div>
+        <button type="button" class="lightbox-close-btn" id="modalCloseBtn" aria-label="Закрыть форму">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="lightbox-body" style="padding: 28px 24px;">
+        <p style="font-size: 0.875rem; color: #9CA3AF; margin-bottom: 20px; line-height: 1.5;">
+          Инженеры отдела спецпроектов подготовят предварительный расчет параметров ЗОК, импульса ударной волны и подберут требуемый уровень защиты (1–4) в течение рабочего дня.
+        </p>
+        <form id="modalLeadForm" style="display: flex; flex-direction: column; gap: 16px; width: 100%;">
+          <input type="hidden" id="modalTargetType" name="targetType" value="">
+          <div>
+            <label style="display: block; font-family: var(--font-mono); font-size: 0.75rem; color: #D1D5DB; margin-bottom: 6px;">ВАШЕ ИМЯ И ДОЛЖНОСТЬ</label>
+            <input type="text" required placeholder="Иванов Сергей, Главный инженер" style="width: 100%; background: #0E1015; border: 1px solid var(--border-dark); color: #fff; padding: 12px 14px; font-size: 0.9375rem;">
+          </div>
+          <div>
+            <label style="display: block; font-family: var(--font-mono); font-size: 0.75rem; color: #D1D5DB; margin-bottom: 6px;">ТЕЛЕФОН ДЛЯ СВЯЗИ</label>
+            <input type="tel" required placeholder="+7 (___) ___-__-__" style="width: 100%; background: #0E1015; border: 1px solid var(--border-dark); color: #fff; padding: 12px 14px; font-size: 0.9375rem;">
+          </div>
+          <div>
+            <label style="display: block; font-family: var(--font-mono); font-size: 0.75rem; color: #D1D5DB; margin-bottom: 6px;">ТИП ОБЪЕКТА / ТРЕБУЕМЫЙ УРОВЕНЬ</label>
+            <select style="width: 100%; background: #0E1015; border: 1px solid var(--border-dark); color: #fff; padding: 12px 14px; font-size: 0.9375rem;">
+              <option value="1">1-й уровень защиты (Резервуары РВС/РГС, тяжелые БПЛА + осколки)</option>
+              <option value="2">2-й уровень защиты (Технологические колонны, подстанции, средние БПЛА)</option>
+              <option value="3">3-й уровень защиты (Цеховые корпуса, легкие БПЛА / FPV)</option>
+              <option value="4">4-й уровень защиты (Малые БПЛА, базовый периметр)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 8px; width: 100%; justify-content: center; padding: 14px;">
+            ПОЛУЧИТЬ РАСЧЕТ И КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="successToast" style="position: fixed; bottom: 24px; right: 24px; background: var(--color-accent); color: #000; font-family: var(--font-mono); font-weight: 700; font-size: 0.875rem; padding: 16px 24px; box-shadow: 0 12px 36px rgba(0,0,0,0.5); border-left: 4px solid #000; z-index: 10000; display: none; max-width: 420px; line-height: 1.4;"></div>
 
   <script src="js/main.js"></script>
 </body>
