@@ -1,5 +1,5 @@
 /**
- * FABRIT - Passive Anti-Drone Protection
+ * ZOK - Passive Anti-Drone Protection
  * Industrial Landing Page Interactive Logic
  */
 
