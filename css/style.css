@@ -446,8 +446,7 @@ ul, ol {
    ========================================================================== */
 .hero-section {
   position: relative;
-  height: calc(100vh - var(--header-height));
-  min-height: 560px;
+  min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
   background-color: #111317;
@@ -455,7 +454,118 @@ ul, ol {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 40px 0 56px;
+}
+
+/* Industrial Stock Specification Plate (Top of Hero) */
+.hero-stock-plate {
+  width: 100%;
+  background-color: rgba(18, 20, 26, 0.96);
+  border: 1px solid var(--border-dark);
+  border-left: 5px solid var(--color-accent);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: stretch;
+}
+
+.hero-stock-main {
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hero-stock-headline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.4vw, 2.05rem);
+  font-weight: 900;
+  line-height: 1.08;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.hero-stock-specs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-stock-diameters {
+  font-family: var(--font-mono);
+  font-size: 1.1875rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  background: rgba(255, 184, 0, 0.14);
+  border: 1px solid rgba(255, 184, 0, 0.5);
+  padding: 2px 10px;
+  line-height: 1.3;
+}
+
+.hero-stock-formula {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #E5E7EB;
+}
+
+.hero-stock-supply {
+  padding: 20px 28px;
+  border-left: 1px solid var(--border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero-stock-note {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.4;
+}
+
+.hero-stock-cta {
+  padding: 12px 22px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 960px) {
+  .hero-stock-plate {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stock-supply {
+    border-left: none;
+    border-top: 1px solid var(--border-dark);
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-section {
+    padding: 24px 0 40px;
+  }
+
+  .hero-stock-main,
+  .hero-stock-supply {
+    padding: 16px 20px;
+  }
+
+  .hero-stock-supply {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .hero-stock-cta {
+    width: 100%;
+  }
 }
 
 .hero-overlay {
